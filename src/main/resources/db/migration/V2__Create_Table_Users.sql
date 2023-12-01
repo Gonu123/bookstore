@@ -1,0 +1,8 @@
+CREATE TABLE USERS
+(
+    id VARCHAR(50) PRIMARY KEY,
+    username  VARCHAR(50) NOT NULL,
+    name  VARCHAR(50) NOT NULL,
+    ph_no  VARCHAR(10) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);

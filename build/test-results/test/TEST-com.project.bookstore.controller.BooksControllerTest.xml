@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.project.bookstore.controller.BooksControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-28T10:08:08" hostname="0323LTPB0095880" time="0.258">
+  <properties/>
+  <testcase name="getAllBooks()" classname="com.project.bookstore.controller.BooksControllerTest" time="0.258"/>
+  <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+15:38:06.506 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.project.bookstore.controller.BooksControllerTest]: BooksControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:38:06.638 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.project.bookstore.BookstoreApplication for test class com.project.bookstore.controller.BooksControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-11-28T15:38:07.017+05:30  INFO 98981 --- [    Test worker] c.p.b.controller.BooksControllerTest     : Starting BooksControllerTest using Java 17.0.9 with PID 98981 (started by gourav.sharma6 in /Users/gourav.sharma6/Documents/DevelopersBootCamp/BackEnd/bookstore)
+2023-11-28T15:38:07.018+05:30  INFO 98981 --- [    Test worker] c.p.b.controller.BooksControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2023-11-28T15:38:08.877+05:30  INFO 98981 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-11-28T15:38:08.877+05:30  INFO 98981 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-28T15:38:08.879+05:30  INFO 98981 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-11-28T15:38:08.914+05:30  INFO 98981 --- [    Test worker] c.p.b.controller.BooksControllerTest     : Started BooksControllerTest in 2.209 seconds (process running for 3.152)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
