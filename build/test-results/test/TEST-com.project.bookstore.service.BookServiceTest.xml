@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.project.bookstore.service.BookServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-12-01T04:52:43" hostname="0323LTPB0095880" time="0.067">
+  <properties/>
+  <testcase name="addBooks()" classname="com.project.bookstore.service.BookServiceTest" time="0.006"/>
+  <testcase name="addBooksThrowsError()" classname="com.project.bookstore.service.BookServiceTest" time="0.003"/>
+  <testcase name="getBooksBySearchText()" classname="com.project.bookstore.service.BookServiceTest" time="0.057"/>
+  <system-out><![CDATA[2023-12-01T10:22:42.803+05:30  INFO 69666 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.project.bookstore.service.BookServiceTest]: BookServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-01T10:22:42.845+05:30  INFO 69666 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.project.bookstore.BookstoreApplication for test class com.project.bookstore.service.BookServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-01T10:22:42.868+05:30  INFO 69666 --- [    Test worker] c.p.bookstore.service.BookServiceTest    : Starting BookServiceTest using Java 21.0.1 with PID 69666 (started by gourav.sharma6 in /Users/gourav.sharma6/Documents/DevelopersBootCamp/BackEnd/bookstore)
+2023-12-01T10:22:42.869+05:30  INFO 69666 --- [    Test worker] c.p.bookstore.service.BookServiceTest    : No active profile set, falling back to 1 default profile: "default"
+2023-12-01T10:22:43.134+05:30  INFO 69666 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-01T10:22:43.134+05:30  INFO 69666 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-01T10:22:43.134+05:30  INFO 69666 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-12-01T10:22:43.139+05:30  INFO 69666 --- [    Test worker] c.p.bookstore.service.BookServiceTest    : Started BookServiceTest in 0.292 seconds (process running for 6.076)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

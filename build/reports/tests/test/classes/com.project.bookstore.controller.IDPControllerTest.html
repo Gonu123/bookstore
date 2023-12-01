@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - IDPControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>IDPControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.project.bookstore.controller.html">com.project.bookstore.controller</a> &gt; IDPControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.174s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createUserShouldReturnBadRequestWhenNameIsMissingInRequest()</td>
+<td class="success">0.120s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createUserShouldReturnBadRequestWhenPhoneNumberContainsNotNumeric()</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createUserShouldReturnBadRequestWhenPhoneNumberIsMissingInRequest()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createUserShouldReturnBadRequestWhenPhoneNumberIsNot10Digits()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createUserShouldReturnBadRequestWhenUsernameIsMissingInRequest()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createUserShouldReturnBadRequestWhenUsernameIsNotMatchingEmailIdFormat()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getUserShouldReturnUnauthorizedWhenAccessTokenNotPassedInHeader()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateUser()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateUserShouldReturnBadRequestAndUSERNAME_ALREADY_TAKENErrorCodeInResponse()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-12-01T10:22:41.764+05:30  INFO 69666 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.project.bookstore.controller.IDPControllerTest]: IDPControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-01T10:22:41.783+05:30  INFO 69666 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.project.bookstore.BookstoreApplication for test class com.project.bookstore.controller.IDPControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-01T10:22:41.819+05:30  INFO 69666 --- [    Test worker] c.p.b.controller.IDPControllerTest       : Starting IDPControllerTest using Java 21.0.1 with PID 69666 (started by gourav.sharma6 in /Users/gourav.sharma6/Documents/DevelopersBootCamp/BackEnd/bookstore)
+2023-12-01T10:22:41.820+05:30  INFO 69666 --- [    Test worker] c.p.b.controller.IDPControllerTest       : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-12-01T10:22:42.385+05:30  INFO 69666 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-01T10:22:42.385+05:30  INFO 69666 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-01T10:22:42.386+05:30  INFO 69666 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-12-01T10:22:42.392+05:30  INFO 69666 --- [    Test worker] c.p.b.controller.IDPControllerTest       : Started IDPControllerTest in 0.607 seconds (process running for 5.329)
+2023-12-01T10:22:42.498+05:30  WARN 69666 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;?&gt; com.project.bookstore.controller.IdpController.createUser(com.project.bookstore.request.UserRequest) with 2 errors: [Field error in object 'userRequest' on field 'username': rejected value [Vineeth R]; codes [Email.userRequest.username,Email.username,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.username,username]; arguments []; default message [username],[Ljakarta.validation.constraints.Pattern$Flag;@47d6a31a,.*]; default message [must be a well-formed email address]] [Field error in object 'userRequest' on field 'name': rejected value [null]; codes [NotBlank.userRequest.name,NotBlank.name,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.name,name]; arguments []; default message [name]]; default message [The name is required.]] ]
+2023-12-01T10:22:42.512+05:30  WARN 69666 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;?&gt; com.project.bookstore.controller.IdpController.createUser(com.project.bookstore.request.UserRequest): [Field error in object 'userRequest' on field 'name': rejected value []; codes [NotBlank.userRequest.name,NotBlank.name,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.name,name]; arguments []; default message [name]]; default message [The name is required.]] ]
+2023-12-01T10:22:42.518+05:30  WARN 69666 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;?&gt; com.project.bookstore.controller.IdpController.createUser(com.project.bookstore.request.UserRequest): [Field error in object 'userRequest' on field 'username': rejected value [null]; codes [NotBlank.userRequest.username,NotBlank.username,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.username,username]; arguments []; default message [username]]; default message [The username is required.]] ]
+2023-12-01T10:22:42.521+05:30  WARN 69666 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;?&gt; com.project.bookstore.controller.IdpController.createUser(com.project.bookstore.request.UserRequest): [Field error in object 'userRequest' on field 'username': rejected value []; codes [NotBlank.userRequest.username,NotBlank.username,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.username,username]; arguments []; default message [username]]; default message [The username is required.]] ]
+2023-12-01T10:22:42.535+05:30  WARN 69666 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;?&gt; com.project.bookstore.controller.IdpController.createUser(com.project.bookstore.request.UserRequest): [Field error in object 'userRequest' on field 'phNo': rejected value [a741141924]; codes [Pattern.userRequest.phNo,Pattern.phNo,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.phNo,phNo]; arguments []; default message [phNo],[Ljakarta.validation.constraints.Pattern$Flag;@323b4e2a,^[0-9]{10}$]; default message [Phone number is not valid]] ]
+2023-12-01T10:22:42.554+05:30  WARN 69666 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;?&gt; com.project.bookstore.controller.IdpController.createUser(com.project.bookstore.request.UserRequest): [Field error in object 'userRequest' on field 'phNo': rejected value [1234]; codes [Pattern.userRequest.phNo,Pattern.phNo,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.phNo,phNo]; arguments []; default message [phNo],[Ljakarta.validation.constraints.Pattern$Flag;@323b4e2a,^[0-9]{10}$]; default message [Phone number is not valid]] ]
+2023-12-01T10:22:42.567+05:30  WARN 69666 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;?&gt; com.project.bookstore.controller.IdpController.createUser(com.project.bookstore.request.UserRequest) with 2 errors: [Field error in object 'userRequest' on field 'phNo': rejected value [null]; codes [NotBlank.userRequest.phNo,NotBlank.phNo,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.phNo,phNo]; arguments []; default message [phNo]]; default message [The phone number is required.]] [Field error in object 'userRequest' on field 'username': rejected value [vin-450]; codes [Email.userRequest.username,Email.username,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.username,username]; arguments []; default message [username],[Ljakarta.validation.constraints.Pattern$Flag;@47d6a31a,.*]; default message [must be a well-formed email address]] ]
+2023-12-01T10:22:42.569+05:30  WARN 69666 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;?&gt; com.project.bookstore.controller.IdpController.createUser(com.project.bookstore.request.UserRequest) with 2 errors: [Field error in object 'userRequest' on field 'phNo': rejected value []; codes [NotBlank.userRequest.phNo,NotBlank.phNo,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.phNo,phNo]; arguments []; default message [phNo]]; default message [The phone number is required.]] [Field error in object 'userRequest' on field 'phNo': rejected value []; codes [Pattern.userRequest.phNo,Pattern.phNo,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.phNo,phNo]; arguments []; default message [phNo],[Ljakarta.validation.constraints.Pattern$Flag;@323b4e2a,^[0-9]{10}$]; default message [Phone number is not valid]] ]
+2023-12-01T10:22:42.574+05:30  WARN 69666 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;?&gt; com.project.bookstore.controller.IdpController.createUser(com.project.bookstore.request.UserRequest): [Field error in object 'userRequest' on field 'username': rejected value [abcd]; codes [Email.userRequest.username,Email.username,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRequest.username,username]; arguments []; default message [username],[Ljakarta.validation.constraints.Pattern$Flag;@47d6a31a,.*]; default message [must be a well-formed email address]] ]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at 01-Dec-2023, 10:22:43 am</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.project.bookstore.interceptors.InterceptorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-01T04:52:42" hostname="0323LTPB0095880" time="0.004">
+  <properties/>
+  <testcase name="shouldReturnTrueWhenProtectedUrlMapIsNotConfigured()" classname="com.project.bookstore.interceptors.InterceptorTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

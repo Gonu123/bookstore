@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.project.bookstore.controller.BooksControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-28T10:08:08" hostname="0323LTPB0095880" time="0.258">
+<testsuite name="com.project.bookstore.controller.BooksControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-12-01T04:52:41" hostname="0323LTPB0095880" time="0.474">
   <properties/>
-  <testcase name="getAllBooks()" classname="com.project.bookstore.controller.BooksControllerTest" time="0.258"/>
+  <testcase name="addBooks()" classname="com.project.bookstore.controller.BooksControllerTest" time="0.271"/>
+  <testcase name="addBooksError()" classname="com.project.bookstore.controller.BooksControllerTest" time="0.031"/>
+  <testcase name="getAllBooks()" classname="com.project.bookstore.controller.BooksControllerTest" time="0.149"/>
+  <testcase name="shouldReturnBook()" classname="com.project.bookstore.controller.BooksControllerTest" time="0.013"/>
+  <testcase name="shouldReturnBooksBasedOnSearchText()" classname="com.project.bookstore.controller.BooksControllerTest" time="0.005"/>
   <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
-15:38:06.506 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.project.bookstore.controller.BooksControllerTest]: BooksControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-15:38:06.638 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.project.bookstore.BookstoreApplication for test class com.project.bookstore.controller.BooksControllerTest
+10:22:38.344 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.project.bookstore.controller.BooksControllerTest]: BooksControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:22:38.465 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.project.bookstore.BookstoreApplication for test class com.project.bookstore.controller.BooksControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,12 +18,48 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2023-11-28T15:38:07.017+05:30  INFO 98981 --- [    Test worker] c.p.b.controller.BooksControllerTest     : Starting BooksControllerTest using Java 17.0.9 with PID 98981 (started by gourav.sharma6 in /Users/gourav.sharma6/Documents/DevelopersBootCamp/BackEnd/bookstore)
-2023-11-28T15:38:07.018+05:30  INFO 98981 --- [    Test worker] c.p.b.controller.BooksControllerTest     : No active profile set, falling back to 1 default profile: "default"
-2023-11-28T15:38:08.877+05:30  INFO 98981 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-11-28T15:38:08.877+05:30  INFO 98981 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-11-28T15:38:08.879+05:30  INFO 98981 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2023-11-28T15:38:08.914+05:30  INFO 98981 --- [    Test worker] c.p.b.controller.BooksControllerTest     : Started BooksControllerTest in 2.209 seconds (process running for 3.152)
+2023-12-01T10:22:38.867+05:30  INFO 69666 --- [    Test worker] c.p.b.controller.BooksControllerTest     : Starting BooksControllerTest using Java 21.0.1 with PID 69666 (started by gourav.sharma6 in /Users/gourav.sharma6/Documents/DevelopersBootCamp/BackEnd/bookstore)
+2023-12-01T10:22:38.868+05:30  INFO 69666 --- [    Test worker] c.p.b.controller.BooksControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2023-12-01T10:22:41.241+05:30  INFO 69666 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-01T10:22:41.242+05:30  INFO 69666 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-01T10:22:41.244+05:30  INFO 69666 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-12-01T10:22:41.276+05:30  INFO 69666 --- [    Test worker] c.p.b.controller.BooksControllerTest     : Started BooksControllerTest in 2.754 seconds (process running for 4.213)
+Invalid csv format. error: Error parsing CSV line: 2. [0195153448,Classical Mythology,Classical Mythology,Mark P. O. Morford,2002,http://images.amazon.com/images/P/0195153448.01.MZZZZZZZ.jpg,http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg,256.22242641102025,0,abc]
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/gourav.sharma6/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.10/90ed94ac044ea8953b224304c762316e91fd6b31/byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Exception in thread "pool-3-thread-1" java.lang.RuntimeException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of abc to java.lang.Double failed.
+	at com.opencsv.bean.util.OpencsvUtils.handleException(OpencsvUtils.java:128)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of abc to java.lang.Double failed.
+	at com.opencsv.bean.ConverterPrimitiveTypes.convertToRead(ConverterPrimitiveTypes.java:129)
+	at com.opencsv.bean.BeanFieldSingleValue.convert(BeanFieldSingleValue.java:99)
+	at com.opencsv.bean.AbstractBeanField.setFieldValue(AbstractBeanField.java:182)
+	at com.opencsv.bean.AbstractMappingStrategy.setFieldValue(AbstractMappingStrategy.java:631)
+	at com.opencsv.bean.AbstractMappingStrategy.populateNewBean(AbstractMappingStrategy.java:334)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.processLine(ProcessCsvLine.java:131)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:87)
+	... 3 more
+Caused by: org.apache.commons.beanutils.ConversionException: Error converting from 'String' to 'Double' For input string: "abc"
+	at org.apache.commons.beanutils.converters.AbstractConverter.handleError(AbstractConverter.java:282)
+	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:177)
+	at org.apache.commons.beanutils.converters.ConverterFacade.convert(ConverterFacade.java:61)
+	at org.apache.commons.beanutils.ConvertUtilsBean.convert(ConvertUtilsBean.java:491)
+	at com.opencsv.bean.ConverterPrimitiveTypes.convertToRead(ConverterPrimitiveTypes.java:119)
+	... 9 more
+Caused by: java.lang.NumberFormatException: For input string: "abc"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:792)
+	at java.base/java.lang.Double.<init>(Double.java:888)
+	at org.apache.commons.beanutils.converters.NumberConverter.toNumber(NumberConverter.java:448)
+	at org.apache.commons.beanutils.converters.NumberConverter.convertToType(NumberConverter.java:271)
+	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:169)
+	... 12 more
+]]></system-err>
 </testsuite>

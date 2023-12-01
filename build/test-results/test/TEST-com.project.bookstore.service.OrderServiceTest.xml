@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.project.bookstore.service.OrderServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-12-01T04:52:43" hostname="0323LTPB0095880" time="0.016">
+  <properties/>
+  <testcase name="orderFailureInUserNotFound()" classname="com.project.bookstore.service.OrderServiceTest" time="0.003"/>
+  <testcase name="orderFailureOnOrdersNotStored()" classname="com.project.bookstore.service.OrderServiceTest" time="0.003"/>
+  <testcase name="orderFailureOnItemsEmpty()" classname="com.project.bookstore.service.OrderServiceTest" time="0.001"/>
+  <testcase name="getOrdersShouldReturnOrdersForTheGivenUser()" classname="com.project.bookstore.service.OrderServiceTest" time="0.004"/>
+  <testcase name="orderSuccessful()" classname="com.project.bookstore.service.OrderServiceTest" time="0.001"/>
+  <system-out><![CDATA[2023-12-01T10:22:43.285+05:30  INFO 69666 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.project.bookstore.service.OrderServiceTest]: OrderServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-01T10:22:43.289+05:30  INFO 69666 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.project.bookstore.BookstoreApplication for test class com.project.bookstore.service.OrderServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-01T10:22:43.311+05:30  INFO 69666 --- [    Test worker] c.p.bookstore.service.OrderServiceTest   : Starting OrderServiceTest using Java 21.0.1 with PID 69666 (started by gourav.sharma6 in /Users/gourav.sharma6/Documents/DevelopersBootCamp/BackEnd/bookstore)
+2023-12-01T10:22:43.311+05:30  INFO 69666 --- [    Test worker] c.p.bookstore.service.OrderServiceTest   : No active profile set, falling back to 1 default profile: "default"
+2023-12-01T10:22:43.655+05:30  INFO 69666 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-01T10:22:43.656+05:30  INFO 69666 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-01T10:22:43.656+05:30  INFO 69666 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-12-01T10:22:43.661+05:30  INFO 69666 --- [    Test worker] c.p.bookstore.service.OrderServiceTest   : Started OrderServiceTest in 0.37 seconds (process running for 6.598)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

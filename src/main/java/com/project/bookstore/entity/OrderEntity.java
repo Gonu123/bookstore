@@ -13,11 +13,12 @@ public class OrderEntity {
     public OrderEntity() {
     }
 
-    public OrderEntity(String orderId, String address, String userId, String modeOfPayment) {
+    public OrderEntity(String orderId, String address, String userId, String modeOfPayment, double totalPrice) {
         this.orderId = orderId;
         this.address = address;
         this.userId = userId;
         this.modeOfPayment = modeOfPayment;
+        this.totalPrice = totalPrice;
     }
 
     @Id
@@ -32,6 +33,8 @@ public class OrderEntity {
 
     private String modeOfPayment;
 
+    private Double totalPrice;
+
     public String getOrderId() {
         return orderId;
     }
@@ -43,6 +46,10 @@ public class OrderEntity {
     public String getOrderDate() {
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return orderDate != null ? format.format(orderDate) : "";
+    }
+
+    public Double getTotalPrice() {
+        return totalPrice;
     }
 
     public String getModeOfPayment() {

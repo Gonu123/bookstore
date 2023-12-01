@@ -12,9 +12,12 @@ public class ItemsEntity {
 
     private Integer quantity;
 
-    public ItemsEntity(String orderId, String isbn, Integer quantity) {
+    private Double price;
+
+    public ItemsEntity(String orderId, String isbn, Integer quantity, double price) {
         this.id = new ItemsId(orderId, isbn);
         this.quantity = quantity;
+        this.price = price;
     }
 
     public ItemsEntity() {
@@ -26,5 +29,9 @@ public class ItemsEntity {
 
     public Integer getQuantity() {
         return quantity;
+    }
+
+    public Double getPrice() {
+        return price;
     }
 }

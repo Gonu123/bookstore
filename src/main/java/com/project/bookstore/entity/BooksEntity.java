@@ -89,6 +89,10 @@ public class BooksEntity {
         this.price = price;
     }
 
+    public void setBooksAvailable(Integer booksAvailable) {
+        this.booksAvailable = booksAvailable;
+    }
+
     public void setRating(Double rating) {
         this.rating = rating;
     }
